@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF2E866519C7DF5B00DA545F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2E866419C7DF5B00DA545F /* Cocoa.framework */; };
+		CF2E866F19C7DF5B00DA545F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF2E866D19C7DF5B00DA545F /* InfoPlist.strings */; };
+		CF2E867119C7DF5B00DA545F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2E867019C7DF5B00DA545F /* main.m */; };
+		CF2E867519C7DF5B00DA545F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CF2E867319C7DF5B00DA545F /* Credits.rtf */; };
+		CF2E867B19C7DF5B00DA545F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2E867919C7DF5B00DA545F /* MainMenu.xib */; };
+		CF2E867D19C7DF5B00DA545F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2E867C19C7DF5B00DA545F /* Images.xcassets */; };
+		CF2E868519C7DF5B00DA545F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2E866419C7DF5B00DA545F /* Cocoa.framework */; };
+		CF2E868D19C7DF5B00DA545F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF2E868B19C7DF5B00DA545F /* InfoPlist.strings */; };
+		CF2E868F19C7DF5B00DA545F /* abnormal_event_detectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2E868E19C7DF5B00DA545F /* abnormal_event_detectionTests.m */; };
+		CF3567CF19C8293900C84648 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3567CE19C8293900C84648 /* Accelerate.framework */; };
+		CF3567D519C82F2600C84648 /* NSImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF3567D419C82F2600C84648 /* NSImage+OpenCV.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3567D719C8307300C84648 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF3567D619C8307300C84648 /* test.jpg */; };
+		CF3F074F19CC2220000B4CCE /* libopencv_calib3d.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F073D19CC2220000B4CCE /* libopencv_calib3d.2.4.9.dylib */; };
+		CF3F075019CC2220000B4CCE /* libopencv_contrib.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F073E19CC2220000B4CCE /* libopencv_contrib.2.4.9.dylib */; };
+		CF3F075119CC2220000B4CCE /* libopencv_core.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F073F19CC2220000B4CCE /* libopencv_core.2.4.9.dylib */; };
+		CF3F075219CC2220000B4CCE /* libopencv_features2d.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074019CC2220000B4CCE /* libopencv_features2d.2.4.9.dylib */; };
+		CF3F075319CC2220000B4CCE /* libopencv_flann.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074119CC2220000B4CCE /* libopencv_flann.2.4.9.dylib */; };
+		CF3F075419CC2220000B4CCE /* libopencv_gpu.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074219CC2220000B4CCE /* libopencv_gpu.2.4.9.dylib */; };
+		CF3F075519CC2220000B4CCE /* libopencv_highgui.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074319CC2220000B4CCE /* libopencv_highgui.2.4.9.dylib */; };
+		CF3F075619CC2220000B4CCE /* libopencv_imgproc.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074419CC2220000B4CCE /* libopencv_imgproc.2.4.9.dylib */; };
+		CF3F075719CC2221000B4CCE /* libopencv_legacy.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074519CC2220000B4CCE /* libopencv_legacy.2.4.9.dylib */; };
+		CF3F075819CC2221000B4CCE /* libopencv_ml.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074619CC2220000B4CCE /* libopencv_ml.2.4.9.dylib */; };
+		CF3F075919CC2221000B4CCE /* libopencv_nonfree.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074719CC2220000B4CCE /* libopencv_nonfree.2.4.9.dylib */; };
+		CF3F075A19CC2221000B4CCE /* libopencv_objdetect.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074819CC2220000B4CCE /* libopencv_objdetect.2.4.9.dylib */; };
+		CF3F075B19CC2221000B4CCE /* libopencv_ocl.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074919CC2220000B4CCE /* libopencv_ocl.2.4.9.dylib */; };
+		CF3F075C19CC2221000B4CCE /* libopencv_photo.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074A19CC2220000B4CCE /* libopencv_photo.2.4.9.dylib */; };
+		CF3F075D19CC2221000B4CCE /* libopencv_stitching.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074B19CC2220000B4CCE /* libopencv_stitching.2.4.9.dylib */; };
+		CF3F075E19CC2221000B4CCE /* libopencv_superres.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074C19CC2220000B4CCE /* libopencv_superres.2.4.9.dylib */; };
+		CF3F075F19CC2221000B4CCE /* libopencv_video.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074D19CC2220000B4CCE /* libopencv_video.2.4.9.dylib */; };
+		CF3F076019CC2221000B4CCE /* libopencv_videostab.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3F074E19CC2220000B4CCE /* libopencv_videostab.2.4.9.dylib */; };
+		CF5CEED319D2BFBC002F972A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CF5CEED219D2BFBC002F972A /* README.md */; };
+		CFA2F6DE19C8048C00999189 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFA2F6DD19C8048C00999189 /* AppDelegate.mm */; };
+		CFA2F6DF19C8062500999189 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2E866819C7DF5B00DA545F /* CoreData.framework */; };
+		CFA2F6EC19C8062500999189 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6E019C8062500999189 /* CoreAudio.framework */; };
+		CFA2F6EF19C8062500999189 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6E319C8062500999189 /* CoreGraphics.framework */; };
+		CFA2F6F019C8062500999189 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6E419C8062500999189 /* CoreLocation.framework */; };
+		CFA2F6F119C8062500999189 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6E519C8062500999189 /* CoreMedia.framework */; };
+		CFA2F6F419C8062500999189 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6E819C8062500999189 /* CoreServices.framework */; };
+		CFA2F6F519C8062500999189 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6E919C8062500999189 /* CoreText.framework */; };
+		CFA2F6F619C8062500999189 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6EA19C8062500999189 /* CoreVideo.framework */; };
+		CFA2F6F719C8062500999189 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6EB19C8062500999189 /* CoreWLAN.framework */; };
+		CFB198CF19C959D600255618 /* Detector.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFB198CE19C959D600255618 /* Detector.mm */; };
+		CFD5C95819D263FE006631EA /* Broadcast.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFD5C95719D263FE006631EA /* Broadcast.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF2E868619C7DF5B00DA545F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2E865919C7DF5B00DA545F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2E866019C7DF5B00DA545F;
+			remoteInfo = "abnormal event detection";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF2E866119C7DF5B00DA545F /* Realtime Abnormal Event Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Realtime Abnormal Event Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2E866419C7DF5B00DA545F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CF2E866719C7DF5B00DA545F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CF2E866819C7DF5B00DA545F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CF2E866919C7DF5B00DA545F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF2E866C19C7DF5B00DA545F /* Realtime Abnormal Event Detection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Realtime Abnormal Event Detection-Info.plist"; sourceTree = "<group>"; };
+		CF2E866E19C7DF5B00DA545F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF2E867019C7DF5B00DA545F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF2E867219C7DF5B00DA545F /* Realtime Abnormal Event Detection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Realtime Abnormal Event Detection-Prefix.pch"; sourceTree = "<group>"; };
+		CF2E867419C7DF5B00DA545F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CF2E867619C7DF5B00DA545F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF2E867A19C7DF5B00DA545F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CF2E867C19C7DF5B00DA545F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF2E868219C7DF5B00DA545F /* Realtime Abnormal Event DetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Realtime Abnormal Event DetectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2E868A19C7DF5B00DA545F /* Realtime Abnormal Event DetectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Realtime Abnormal Event DetectionTests-Info.plist"; sourceTree = "<group>"; };
+		CF2E868C19C7DF5B00DA545F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF2E868E19C7DF5B00DA545F /* abnormal_event_detectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = abnormal_event_detectionTests.m; sourceTree = "<group>"; };
+		CF3567CE19C8293900C84648 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CF3567D319C82F2600C84648 /* NSImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+OpenCV.h"; sourceTree = SOURCE_ROOT; };
+		CF3567D419C82F2600C84648 /* NSImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+OpenCV.mm"; sourceTree = SOURCE_ROOT; };
+		CF3567D619C8307300C84648 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		CF3F073D19CC2220000B4CCE /* libopencv_calib3d.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_calib3d.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F073E19CC2220000B4CCE /* libopencv_contrib.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_contrib.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F073F19CC2220000B4CCE /* libopencv_core.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_core.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074019CC2220000B4CCE /* libopencv_features2d.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_features2d.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074119CC2220000B4CCE /* libopencv_flann.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_flann.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074219CC2220000B4CCE /* libopencv_gpu.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_gpu.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074319CC2220000B4CCE /* libopencv_highgui.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_highgui.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074419CC2220000B4CCE /* libopencv_imgproc.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgproc.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074519CC2220000B4CCE /* libopencv_legacy.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_legacy.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074619CC2220000B4CCE /* libopencv_ml.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_ml.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074719CC2220000B4CCE /* libopencv_nonfree.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_nonfree.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074819CC2220000B4CCE /* libopencv_objdetect.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_objdetect.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074919CC2220000B4CCE /* libopencv_ocl.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_ocl.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074A19CC2220000B4CCE /* libopencv_photo.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_photo.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074B19CC2220000B4CCE /* libopencv_stitching.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_stitching.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074C19CC2220000B4CCE /* libopencv_superres.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_superres.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074D19CC2220000B4CCE /* libopencv_video.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_video.2.4.9.dylib; sourceTree = "<group>"; };
+		CF3F074E19CC2220000B4CCE /* libopencv_videostab.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.2.4.9.dylib; sourceTree = "<group>"; };
+		CF5CEED219D2BFBC002F972A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		CF9F680219C8819D00D24FEB /* abnormal event detection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "abnormal event detection.entitlements"; sourceTree = "<group>"; };
+		CFA2F6DD19C8048C00999189 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		CFA2F6E019C8062500999189 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		CFA2F6E319C8062500999189 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CFA2F6E419C8062500999189 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CFA2F6E519C8062500999189 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CFA2F6E819C8062500999189 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		CFA2F6E919C8062500999189 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		CFA2F6EA19C8062500999189 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CFA2F6EB19C8062500999189 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		CFB198CD19C959C400255618 /* Detector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detector.h; sourceTree = "<group>"; };
+		CFB198CE19C959D600255618 /* Detector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Detector.mm; sourceTree = "<group>"; };
+		CFD5C95619D263BA006631EA /* Broadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broadcast.h; sourceTree = "<group>"; };
+		CFD5C95719D263FE006631EA /* Broadcast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Broadcast.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2E865E19C7DF5B00DA545F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3F075D19CC2221000B4CCE /* libopencv_stitching.2.4.9.dylib in Frameworks */,
+				CF3F075119CC2220000B4CCE /* libopencv_core.2.4.9.dylib in Frameworks */,
+				CF3F075319CC2220000B4CCE /* libopencv_flann.2.4.9.dylib in Frameworks */,
+				CF3567CF19C8293900C84648 /* Accelerate.framework in Frameworks */,
+				CF3F075C19CC2221000B4CCE /* libopencv_photo.2.4.9.dylib in Frameworks */,
+				CF3F075219CC2220000B4CCE /* libopencv_features2d.2.4.9.dylib in Frameworks */,
+				CF3F076019CC2221000B4CCE /* libopencv_videostab.2.4.9.dylib in Frameworks */,
+				CFA2F6EC19C8062500999189 /* CoreAudio.framework in Frameworks */,
+				CF3F075F19CC2221000B4CCE /* libopencv_video.2.4.9.dylib in Frameworks */,
+				CF3F075B19CC2221000B4CCE /* libopencv_ocl.2.4.9.dylib in Frameworks */,
+				CFA2F6EF19C8062500999189 /* CoreGraphics.framework in Frameworks */,
+				CFA2F6F019C8062500999189 /* CoreLocation.framework in Frameworks */,
+				CF3F075919CC2221000B4CCE /* libopencv_nonfree.2.4.9.dylib in Frameworks */,
+				CF3F074F19CC2220000B4CCE /* libopencv_calib3d.2.4.9.dylib in Frameworks */,
+				CFA2F6F119C8062500999189 /* CoreMedia.framework in Frameworks */,
+				CF3F075819CC2221000B4CCE /* libopencv_ml.2.4.9.dylib in Frameworks */,
+				CF3F075019CC2220000B4CCE /* libopencv_contrib.2.4.9.dylib in Frameworks */,
+				CF3F075E19CC2221000B4CCE /* libopencv_superres.2.4.9.dylib in Frameworks */,
+				CFA2F6F419C8062500999189 /* CoreServices.framework in Frameworks */,
+				CFA2F6F519C8062500999189 /* CoreText.framework in Frameworks */,
+				CFA2F6F619C8062500999189 /* CoreVideo.framework in Frameworks */,
+				CF3F075A19CC2221000B4CCE /* libopencv_objdetect.2.4.9.dylib in Frameworks */,
+				CF3F075419CC2220000B4CCE /* libopencv_gpu.2.4.9.dylib in Frameworks */,
+				CF3F075719CC2221000B4CCE /* libopencv_legacy.2.4.9.dylib in Frameworks */,
+				CFA2F6F719C8062500999189 /* CoreWLAN.framework in Frameworks */,
+				CFA2F6DF19C8062500999189 /* CoreData.framework in Frameworks */,
+				CF2E866519C7DF5B00DA545F /* Cocoa.framework in Frameworks */,
+				CF3F075619CC2220000B4CCE /* libopencv_imgproc.2.4.9.dylib in Frameworks */,
+				CF3F075519CC2220000B4CCE /* libopencv_highgui.2.4.9.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E867F19C7DF5B00DA545F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E868519C7DF5B00DA545F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2E865819C7DF5B00DA545F = {
+			isa = PBXGroup;
+			children = (
+				CF2E866A19C7DF5B00DA545F /* abnormal event detection */,
+				CF2E868819C7DF5B00DA545F /* abnormal event detectionTests */,
+				CF2E866319C7DF5B00DA545F /* Frameworks */,
+				CF2E866219C7DF5B00DA545F /* Products */,
+				CF3567D819C8307800C84648 /* images */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2E866219C7DF5B00DA545F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E866119C7DF5B00DA545F /* Realtime Abnormal Event Detection.app */,
+				CF2E868219C7DF5B00DA545F /* Realtime Abnormal Event DetectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2E866319C7DF5B00DA545F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF3F073C19CC2220000B4CCE /* lib */,
+				CF3567CE19C8293900C84648 /* Accelerate.framework */,
+				CFA2F6E019C8062500999189 /* CoreAudio.framework */,
+				CFA2F6E319C8062500999189 /* CoreGraphics.framework */,
+				CFA2F6E419C8062500999189 /* CoreLocation.framework */,
+				CFA2F6E519C8062500999189 /* CoreMedia.framework */,
+				CFA2F6E819C8062500999189 /* CoreServices.framework */,
+				CFA2F6E919C8062500999189 /* CoreText.framework */,
+				CFA2F6EA19C8062500999189 /* CoreVideo.framework */,
+				CFA2F6EB19C8062500999189 /* CoreWLAN.framework */,
+				CF2E866419C7DF5B00DA545F /* Cocoa.framework */,
+				CF2E866619C7DF5B00DA545F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF2E866619C7DF5B00DA545F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E866719C7DF5B00DA545F /* AppKit.framework */,
+				CF2E866819C7DF5B00DA545F /* CoreData.framework */,
+				CF2E866919C7DF5B00DA545F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CF2E866A19C7DF5B00DA545F /* abnormal event detection */ = {
+			isa = PBXGroup;
+			children = (
+				CF3567D319C82F2600C84648 /* NSImage+OpenCV.h */,
+				CF3567D419C82F2600C84648 /* NSImage+OpenCV.mm */,
+				CFD5C95619D263BA006631EA /* Broadcast.h */,
+				CFD5C95719D263FE006631EA /* Broadcast.mm */,
+				CFB198CD19C959C400255618 /* Detector.h */,
+				CFB198CE19C959D600255618 /* Detector.mm */,
+				CF2E867619C7DF5B00DA545F /* AppDelegate.h */,
+				CFA2F6DD19C8048C00999189 /* AppDelegate.mm */,
+				CF2E867919C7DF5B00DA545F /* MainMenu.xib */,
+				CF2E867C19C7DF5B00DA545F /* Images.xcassets */,
+				CF2E866B19C7DF5B00DA545F /* Supporting Files */,
+			);
+			path = "abnormal event detection";
+			sourceTree = "<group>";
+		};
+		CF2E866B19C7DF5B00DA545F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF9F680219C8819D00D24FEB /* abnormal event detection.entitlements */,
+				CF2E866C19C7DF5B00DA545F /* Realtime Abnormal Event Detection-Info.plist */,
+				CF2E866D19C7DF5B00DA545F /* InfoPlist.strings */,
+				CF2E867019C7DF5B00DA545F /* main.m */,
+				CF2E867219C7DF5B00DA545F /* Realtime Abnormal Event Detection-Prefix.pch */,
+				CF5CEED219D2BFBC002F972A /* README.md */,
+				CF2E867319C7DF5B00DA545F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF2E868819C7DF5B00DA545F /* abnormal event detectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E868E19C7DF5B00DA545F /* abnormal_event_detectionTests.m */,
+				CF2E868919C7DF5B00DA545F /* Supporting Files */,
+			);
+			path = "abnormal event detectionTests";
+			sourceTree = "<group>";
+		};
+		CF2E868919C7DF5B00DA545F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E868A19C7DF5B00DA545F /* Realtime Abnormal Event DetectionTests-Info.plist */,
+				CF2E868B19C7DF5B00DA545F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF3567D819C8307800C84648 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CF3567D619C8307300C84648 /* test.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		CF3F073C19CC2220000B4CCE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CF3F073D19CC2220000B4CCE /* libopencv_calib3d.2.4.9.dylib */,
+				CF3F073E19CC2220000B4CCE /* libopencv_contrib.2.4.9.dylib */,
+				CF3F073F19CC2220000B4CCE /* libopencv_core.2.4.9.dylib */,
+				CF3F074019CC2220000B4CCE /* libopencv_features2d.2.4.9.dylib */,
+				CF3F074119CC2220000B4CCE /* libopencv_flann.2.4.9.dylib */,
+				CF3F074219CC2220000B4CCE /* libopencv_gpu.2.4.9.dylib */,
+				CF3F074319CC2220000B4CCE /* libopencv_highgui.2.4.9.dylib */,
+				CF3F074419CC2220000B4CCE /* libopencv_imgproc.2.4.9.dylib */,
+				CF3F074519CC2220000B4CCE /* libopencv_legacy.2.4.9.dylib */,
+				CF3F074619CC2220000B4CCE /* libopencv_ml.2.4.9.dylib */,
+				CF3F074719CC2220000B4CCE /* libopencv_nonfree.2.4.9.dylib */,
+				CF3F074819CC2220000B4CCE /* libopencv_objdetect.2.4.9.dylib */,
+				CF3F074919CC2220000B4CCE /* libopencv_ocl.2.4.9.dylib */,
+				CF3F074A19CC2220000B4CCE /* libopencv_photo.2.4.9.dylib */,
+				CF3F074B19CC2220000B4CCE /* libopencv_stitching.2.4.9.dylib */,
+				CF3F074C19CC2220000B4CCE /* libopencv_superres.2.4.9.dylib */,
+				CF3F074D19CC2220000B4CCE /* libopencv_video.2.4.9.dylib */,
+				CF3F074E19CC2220000B4CCE /* libopencv_videostab.2.4.9.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2E866019C7DF5B00DA545F /* Realtime Abnormal Event Detection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2E869219C7DF5B00DA545F /* Build configuration list for PBXNativeTarget "Realtime Abnormal Event Detection" */;
+			buildPhases = (
+				CF2E865D19C7DF5B00DA545F /* Sources */,
+				CF2E865E19C7DF5B00DA545F /* Frameworks */,
+				CF2E865F19C7DF5B00DA545F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Realtime Abnormal Event Detection";
+			productName = "abnormal event detection";
+			productReference = CF2E866119C7DF5B00DA545F /* Realtime Abnormal Event Detection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2E868119C7DF5B00DA545F /* Realtime Abnormal Event DetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2E869519C7DF5B00DA545F /* Build configuration list for PBXNativeTarget "Realtime Abnormal Event DetectionTests" */;
+			buildPhases = (
+				CF2E867E19C7DF5B00DA545F /* Sources */,
+				CF2E867F19C7DF5B00DA545F /* Frameworks */,
+				CF2E868019C7DF5B00DA545F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2E868719C7DF5B00DA545F /* PBXTargetDependency */,
+			);
+			name = "Realtime Abnormal Event DetectionTests";
+			productName = "abnormal event detectionTests";
+			productReference = CF2E868219C7DF5B00DA545F /* Realtime Abnormal Event DetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2E865919C7DF5B00DA545F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					CF2E866019C7DF5B00DA545F = {
+						DevelopmentTeam = EB3P7PMHUA;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					CF2E868119C7DF5B00DA545F = {
+						TestTargetID = CF2E866019C7DF5B00DA545F;
+					};
+				};
+			};
+			buildConfigurationList = CF2E865C19C7DF5B00DA545F /* Build configuration list for PBXProject "Realtime Abnormal Event Detection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF2E865819C7DF5B00DA545F;
+			productRefGroup = CF2E866219C7DF5B00DA545F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2E866019C7DF5B00DA545F /* Realtime Abnormal Event Detection */,
+				CF2E868119C7DF5B00DA545F /* Realtime Abnormal Event DetectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2E865F19C7DF5B00DA545F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E866F19C7DF5B00DA545F /* InfoPlist.strings in Resources */,
+				CF3567D719C8307300C84648 /* test.jpg in Resources */,
+				CF2E867D19C7DF5B00DA545F /* Images.xcassets in Resources */,
+				CF2E867519C7DF5B00DA545F /* Credits.rtf in Resources */,
+				CF2E867B19C7DF5B00DA545F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E868019C7DF5B00DA545F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E868D19C7DF5B00DA545F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2E865D19C7DF5B00DA545F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5CEED319D2BFBC002F972A /* README.md in Sources */,
+				CFA2F6DE19C8048C00999189 /* AppDelegate.mm in Sources */,
+				CF3567D519C82F2600C84648 /* NSImage+OpenCV.mm in Sources */,
+				CF2E867119C7DF5B00DA545F /* main.m in Sources */,
+				CFD5C95819D263FE006631EA /* Broadcast.mm in Sources */,
+				CFB198CF19C959D600255618 /* Detector.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E867E19C7DF5B00DA545F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E868F19C7DF5B00DA545F /* abnormal_event_detectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF2E868719C7DF5B00DA545F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2E866019C7DF5B00DA545F /* Realtime Abnormal Event Detection */;
+			targetProxy = CF2E868619C7DF5B00DA545F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF2E866D19C7DF5B00DA545F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2E866E19C7DF5B00DA545F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF2E867319C7DF5B00DA545F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2E867419C7DF5B00DA545F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CF2E867919C7DF5B00DA545F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2E867A19C7DF5B00DA545F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CF2E868B19C7DF5B00DA545F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2E868C19C7DF5B00DA545F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF2E869019C7DF5B00DA545F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CF2E869119C7DF5B00DA545F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF2E869319C7DF5B00DA545F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "abnormal event detection/Realtime Abnormal Event Detection-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+					/Applications/MATLAB/MATLAB_Compiler_Runtime/v83/extern/include,
+				);
+				INFOPLIST_FILE = "abnormal event detection/Realtime Abnormal Event Detection-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+					/Applications/MATLAB/MATLAB_Compiler_Runtime/v83/extern/lib/maci64,
+				);
+				PRODUCT_NAME = "Realtime Abnormal Event Detection";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF2E869419C7DF5B00DA545F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "abnormal event detection/Realtime Abnormal Event Detection-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+					/Applications/MATLAB/MATLAB_Compiler_Runtime/v83/extern/include,
+				);
+				INFOPLIST_FILE = "abnormal event detection/Realtime Abnormal Event Detection-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+					/Applications/MATLAB/MATLAB_Compiler_Runtime/v83/extern/lib/maci64,
+				);
+				PRODUCT_NAME = "Realtime Abnormal Event Detection";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF2E869619C7DF5B00DA545F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/abnormal event detection.app/Contents/MacOS/abnormal event detection";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "abnormal event detection/abnormal event detection-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "abnormal event detectionTests/Realtime Abnormal Event DetectionTests-Info.plist";
+				PRODUCT_NAME = "Realtime Abnormal Event DetectionTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CF2E869719C7DF5B00DA545F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/abnormal event detection.app/Contents/MacOS/abnormal event detection";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "abnormal event detection/abnormal event detection-Prefix.pch";
+				INFOPLIST_FILE = "abnormal event detectionTests/Realtime Abnormal Event DetectionTests-Info.plist";
+				PRODUCT_NAME = "Realtime Abnormal Event DetectionTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2E865C19C7DF5B00DA545F /* Build configuration list for PBXProject "Realtime Abnormal Event Detection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2E869019C7DF5B00DA545F /* Debug */,
+				CF2E869119C7DF5B00DA545F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2E869219C7DF5B00DA545F /* Build configuration list for PBXNativeTarget "Realtime Abnormal Event Detection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2E869319C7DF5B00DA545F /* Debug */,
+				CF2E869419C7DF5B00DA545F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2E869519C7DF5B00DA545F /* Build configuration list for PBXNativeTarget "Realtime Abnormal Event DetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2E869619C7DF5B00DA545F /* Debug */,
+				CF2E869719C7DF5B00DA545F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2E865919C7DF5B00DA545F /* Project object */;
+}
