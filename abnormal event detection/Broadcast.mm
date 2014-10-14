@@ -7,3 +7,18 @@
 //
 
 #import "Broadcast.h"
+#import "RTSPServer.h"
+
+@implementation broadcast
+- (void) startDaemon {
+    
+}
+
+- (void) sendFrame: (id) frame {
+    
+}
+
+- (void) stopDaemon {
+    
+}
+@end

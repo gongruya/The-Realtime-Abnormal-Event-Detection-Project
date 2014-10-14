@@ -57,12 +57,14 @@
 @interface detector: NSObject {
 @public
     std::vector<cv::Mat> R;
+    UInt32 sparseDim;
+    UInt32 feaDim;
 }
 - (void) sparseLearning: (cuboid *) features : (learningParams*) learningParameters;   //Train with cuboids and parameters.
 - (size_t) detectorNum;
 - (cv::Mat) gradient: (std::vector<cv::Mat>) beta : (cv::Mat) S: (cv::Mat) fea;
-- (void)encodeWithCoder:(NSCoder *)coder;
-- (id)initWithCoder:(NSCoder *)coder;
+- (void) saveToFile: (NSString *) fileName;
+- (void) initFromFile: (NSString *) fileName;
 @end
 
 @interface detectResult: NSObject {

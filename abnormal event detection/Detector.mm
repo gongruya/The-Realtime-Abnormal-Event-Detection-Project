@@ -119,38 +119,25 @@
 @end
 
 @implementation detector
-/*
-- (void)encodeWithCoder:(NSCoder *)coder {
-    NSMutableArray *myArray;
-    [myArray addObject: [NSValue valueWithPointer: &R]];
-    [coder encodeObject:myArray forKey:@"R"];
-}
-- (id)initWithCoder:(NSCoder *)coder {
-    self = [super init];
-    if (self != nil) {
-        R = *(std::vector<cv::Mat> *) [[[coder decodeObjectForKey:@"R"] objectAtIndex:0] pointerValue];
-    }
-    return self;
-}*/
-
 - (size_t) detectorNum {
     return R.size();
 }
 - (void) sparseLearning:(cuboid *)features :(learningParams *)learningParameters {
     cv::Mat feaMat = features -> features;
-    int N = feaMat.cols;
-    UInt32 Dim = learningParameters -> Dim;
-    UInt32 maxIter = 200;
+    UInt32 N = feaMat.cols;
+    sparseDim = learningParameters -> Dim;
+    feaDim = N;
+    UInt32 maxIter = 500;
     double alpha = 0.03;
     double threshold = learningParameters -> thr;
     cv::theRNG().state = time(0);           //Random seed
     std::cout << "Features remain: " << feaMat.rows << std::endl;
     while (feaMat.rows) {
         ///S 500 by 20     beta 20 by 1
-        cv::Mat S = cv::Mat(N, Dim, CV_64FC1);
+        cv::Mat S = cv::Mat(N, sparseDim, CV_64FC1);
         randu(S, cv::Scalar::all(0), cv::Scalar::all(0.1));
         std::vector<cv::Mat> beta(feaMat.rows);
-        for (UInt32 iter = 0; iter < maxIter; ++iter) {
+        for (UInt32 iter = 1; iter <= maxIter; ++iter) {
             ///TRAINING
             cv::Mat tmp = (S.t() * S).inv(cv::DECOMP_SVD) * S.t();
             for (int j = 0; j < feaMat.rows; ++j)
@@ -158,7 +145,7 @@
             cv::Mat grad = [self gradient: beta: S: feaMat];
             S -= alpha * grad;
             if (!(iter % 10))
-                std::cout << "Iter " << iter << ":" << cv::norm(grad) << std::endl;
+                std::cout << "Iter " << iter << ": " << cv::norm(grad) << std::endl;
         }
         cv::normalize(S, S);
         cv::Mat curR = (S * (S.t() * S).inv(cv::DECOMP_SVD) * S.t() - cv::Mat::eye(S.rows, S.rows, CV_64FC1)).t();
@@ -188,6 +175,37 @@
     for (int j = 0; j < fea.rows; ++j)
         ans += 2 * (S * beta[j] - fea.row(j).t()) * beta[j].t();
     return ans;
+}
+
+- (void) saveToFile: (NSString *) fileName {
+    ///feaDim(4B), sparseDim(4B), size(8B), Data(8B * feaDim * feaDim * number)
+    FILE *fp = fopen([fileName UTF8String], "wb");
+    fwrite(&feaDim, 4, 1, fp);
+    fwrite(&sparseDim, 4, 1, fp);
+    UInt64 size = R.size();
+    fwrite(&size, 8, 1, fp);
+    for (int k = 0; k < size; ++k)
+        for (int i = 0; i < feaDim; ++i)
+            for (int j = 0; j < feaDim; ++j)
+                fwrite(&R[k].at<double>(i, j), 8, 1, fp);
+    fclose(fp);
+}
+- (void) initFromFile: (NSString *) fileName {
+    FILE *fp = fopen([fileName UTF8String], "rb");
+    fread(&feaDim, 4, 1, fp);
+    fread(&sparseDim, 4, 1, fp);
+    UInt64 size;
+    fread(&size, 8, 1, fp);
+    double tmp;
+    for (int k = 0; k < size; ++k) {
+        R.push_back(cv::Mat::zeros(feaDim, feaDim, CV_64FC1));
+        for (int i = 0; i < feaDim; ++i)
+            for (int j = 0; j < feaDim; ++j) {
+                fread(&tmp, 8, 1, fp);
+                R[k].at<double>(i, j) = tmp;
+            }
+    }
+    fclose(fp);
 }
 @end
 

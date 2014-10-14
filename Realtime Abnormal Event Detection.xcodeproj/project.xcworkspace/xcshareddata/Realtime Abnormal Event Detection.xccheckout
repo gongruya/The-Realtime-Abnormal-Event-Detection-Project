@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE928B63-99D6-4481-A34C-E9F8E4E72366</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Realtime Abnormal Event Detection</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>85CF20C5A08EF978999EE6CDAFD5EA9B0CC3DF80</key>
+		<string>github.com:gongruya/The-Realtime-Abnormal-Event-Detection-Project.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Realtime Abnormal Event Detection.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>85CF20C5A08EF978999EE6CDAFD5EA9B0CC3DF80</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:gongruya/The-Realtime-Abnormal-Event-Detection-Project.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>85CF20C5A08EF978999EE6CDAFD5EA9B0CC3DF80</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>85CF20C5A08EF978999EE6CDAFD5EA9B0CC3DF80</string>
+			<key>IDESourceControlWCCName</key>
+			<string>abnormal%20event%20detection</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -10,6 +10,7 @@
 #include<fstream>
 #import "NSImage+OpenCV.h"
 #import "Detector.h"
+//#import "RTSPServer.h"
 
 using namespace cv;
 using namespace std;
@@ -27,6 +28,3 @@ using namespace std;
 - (IBAction)actSparseLearning:(id)sender;
 
 @end
-
-
-detector *myDetector = [detector new];   //Learning a detector

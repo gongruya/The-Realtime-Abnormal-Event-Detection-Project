@@ -16,6 +16,7 @@
 @synthesize FPS;
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //My code
+    //NSLog(@"%@", [RTSPServer getIPAddress]);
 }
 
 - (void) training: (NSString *) videoPath {
@@ -23,7 +24,7 @@
     cuboid *features = [cuboid new];
     learningParams *myLearningParameters = [learningParams new];
     myLearningParameters -> Dim = 20;
-    myLearningParameters -> thr = 1.0;
+    myLearningParameters -> thr = 0.8;
     ///set featuring parameters
     feaParams *myFeatureParameters = [feaParams new];
     myFeatureParameters -> winH = 10;
@@ -38,7 +39,10 @@
     
     frameDiffQueue *theFrames = [frameDiffQueue new];
     [theFrames setSize: 5];
-    int maxFrames = 2000;
+    
+    detector *myDetector = [detector new];   //Learning a detector
+    
+    int maxFrames = 7500;
     for (UInt64 i = 0; i < maxFrames; ++i) {
         Mat frame, gray;
         if (!capture.read(frame)) break;
@@ -53,6 +57,8 @@
     NSLog(@"%@\n", @"Feature extraction of the training video is done.");
     [myDetector sparseLearning: features: myLearningParameters];
     NSLog(@"%@\n", @"Sparse learning is done.");
+    [myDetector saveToFile: @"/Users/gongruya/Documents/Computer Vision/abnormal event detection/myDetector"];
+    NSLog(@"%@\n", @"Detector has been saved.");
 }
 
 - (void) myDemo: (NSString *) videoPath {
@@ -60,9 +66,10 @@
     NSDate *timeStart = [NSDate date];
     
     VideoCapture capture([videoPath UTF8String]);
+
     double rate = capture.get(CV_CAP_PROP_FPS);
     int totalFrames = capture.get(CV_CAP_PROP_FRAME_COUNT);
-    //capture.set(CV_CAP_PROP_POS_FRAMES, 1000);
+    //capture.set(CV_CAP_PROP_POS_FRAMES, 5000);
     cout << rate <<" "<< totalFrames << endl;
     
     frameDiffQueue *theFrames = [frameDiffQueue new];
@@ -80,8 +87,12 @@
     cv::Size videoSize(160, 120);
     
     testingParams *myTestingParameters = [testingParams new];
-    [myTestingParameters setParams: 1.0];
+    [myTestingParameters setParams: 1];
     
+    
+    detector *myDetector = [detector new];   //Load the detector
+    [myDetector initFromFile: @"/Users/gongruya/Documents/Computer Vision/abnormal event detection/myDetector"];
+
     vector<NSDate *> timer;
     timer.push_back([NSDate date]);
 
@@ -93,7 +104,7 @@
         cvtColor(frame, gray, CV_BGR2GRAY);
         
         cvtColor(frame, frameRGB, CV_BGR2RGB);
-        [self showVideo: frameRGB: 1];
+        [self showVideo: frameRGB: 1.2];
         
         //[self showVideo: gray: 2];
         [theFrames addDiff: gray];          ///Add current frame into the queue and calculate diff
