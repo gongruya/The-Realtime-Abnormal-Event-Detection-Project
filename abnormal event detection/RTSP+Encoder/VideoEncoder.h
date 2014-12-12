@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 GDCL http://www.gdcl.co.uk/license.htm
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 #import "AVFoundation/AVAssetWriter.h"
 #import "AVFoundation/AVAssetWriterInput.h"
 #import "AVFoundation/AVMediaFormat.h"

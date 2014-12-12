@@ -16,31 +16,32 @@
 		CF2E868519C7DF5B00DA545F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2E866419C7DF5B00DA545F /* Cocoa.framework */; };
 		CF2E868D19C7DF5B00DA545F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF2E868B19C7DF5B00DA545F /* InfoPlist.strings */; };
 		CF2E868F19C7DF5B00DA545F /* abnormal_event_detectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2E868E19C7DF5B00DA545F /* abnormal_event_detectionTests.m */; };
+		CF30013D19F94B930085E579 /* publicMethod.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF30013C19F94B930085E579 /* publicMethod.mm */; };
 		CF3567D719C8307300C84648 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF3567D619C8307300C84648 /* test.jpg */; };
-		CF5CEED319D2BFBC002F972A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CF5CEED219D2BFBC002F972A /* README.md */; };
+		CF8A6C931A1DDC1F000F02E9 /* abnormal event detection-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF8A6C921A1DDC1F000F02E9 /* abnormal event detection-Info.plist */; };
+		CF9D966A19FA2A1E002BAE49 /* libopencv_calib3d.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D965819FA2A1E002BAE49 /* libopencv_calib3d.2.4.9.dylib */; };
+		CF9D966B19FA2A1E002BAE49 /* libopencv_contrib.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D965919FA2A1E002BAE49 /* libopencv_contrib.2.4.9.dylib */; };
+		CF9D966C19FA2A1E002BAE49 /* libopencv_core.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D965A19FA2A1E002BAE49 /* libopencv_core.2.4.9.dylib */; };
+		CF9D966D19FA2A1E002BAE49 /* libopencv_features2d.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D965B19FA2A1E002BAE49 /* libopencv_features2d.2.4.9.dylib */; };
+		CF9D966E19FA2A1E002BAE49 /* libopencv_flann.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D965C19FA2A1E002BAE49 /* libopencv_flann.2.4.9.dylib */; };
+		CF9D966F19FA2A1E002BAE49 /* libopencv_gpu.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D965D19FA2A1E002BAE49 /* libopencv_gpu.2.4.9.dylib */; };
+		CF9D967019FA2A1E002BAE49 /* libopencv_highgui.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D965E19FA2A1E002BAE49 /* libopencv_highgui.2.4.9.dylib */; };
+		CF9D967119FA2A1E002BAE49 /* libopencv_imgproc.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D965F19FA2A1E002BAE49 /* libopencv_imgproc.2.4.9.dylib */; };
+		CF9D967219FA2A1E002BAE49 /* libopencv_legacy.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966019FA2A1E002BAE49 /* libopencv_legacy.2.4.9.dylib */; };
+		CF9D967319FA2A1E002BAE49 /* libopencv_ml.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966119FA2A1E002BAE49 /* libopencv_ml.2.4.9.dylib */; };
+		CF9D967419FA2A1E002BAE49 /* libopencv_nonfree.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966219FA2A1E002BAE49 /* libopencv_nonfree.2.4.9.dylib */; };
+		CF9D967519FA2A1E002BAE49 /* libopencv_objdetect.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966319FA2A1E002BAE49 /* libopencv_objdetect.2.4.9.dylib */; };
+		CF9D967619FA2A1E002BAE49 /* libopencv_ocl.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966419FA2A1E002BAE49 /* libopencv_ocl.2.4.9.dylib */; };
+		CF9D967719FA2A1E002BAE49 /* libopencv_photo.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966519FA2A1E002BAE49 /* libopencv_photo.2.4.9.dylib */; };
+		CF9D967819FA2A1E002BAE49 /* libopencv_stitching.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966619FA2A1E002BAE49 /* libopencv_stitching.2.4.9.dylib */; };
+		CF9D967919FA2A1E002BAE49 /* libopencv_superres.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966719FA2A1E002BAE49 /* libopencv_superres.2.4.9.dylib */; };
+		CF9D967A19FA2A1E002BAE49 /* libopencv_video.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966819FA2A1E002BAE49 /* libopencv_video.2.4.9.dylib */; };
+		CF9D967B19FA2A1E002BAE49 /* libopencv_videostab.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D966919FA2A1E002BAE49 /* libopencv_videostab.2.4.9.dylib */; };
 		CFA2F6DE19C8048C00999189 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFA2F6DD19C8048C00999189 /* AppDelegate.mm */; };
 		CFA2F6DF19C8062500999189 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2E866819C7DF5B00DA545F /* CoreData.framework */; };
 		CFA2F6F619C8062500999189 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2F6EA19C8062500999189 /* CoreVideo.framework */; };
 		CFB198CF19C959D600255618 /* Detector.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFB198CE19C959D600255618 /* Detector.mm */; };
 		CFD4293C19ECBF0C00C6533D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4293B19ECBF0C00C6533D /* AVFoundation.framework */; };
-		CFD4295019ECC05D00C6533D /* libopencv_calib3d.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4293E19ECC05D00C6533D /* libopencv_calib3d.2.4.9.dylib */; };
-		CFD4295119ECC05E00C6533D /* libopencv_contrib.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4293F19ECC05D00C6533D /* libopencv_contrib.2.4.9.dylib */; };
-		CFD4295219ECC05E00C6533D /* libopencv_core.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294019ECC05D00C6533D /* libopencv_core.2.4.9.dylib */; };
-		CFD4295319ECC05E00C6533D /* libopencv_features2d.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294119ECC05D00C6533D /* libopencv_features2d.2.4.9.dylib */; };
-		CFD4295419ECC05E00C6533D /* libopencv_flann.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294219ECC05D00C6533D /* libopencv_flann.2.4.9.dylib */; };
-		CFD4295519ECC05E00C6533D /* libopencv_gpu.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294319ECC05D00C6533D /* libopencv_gpu.2.4.9.dylib */; };
-		CFD4295619ECC05E00C6533D /* libopencv_highgui.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294419ECC05D00C6533D /* libopencv_highgui.2.4.9.dylib */; };
-		CFD4295719ECC05E00C6533D /* libopencv_imgproc.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294519ECC05D00C6533D /* libopencv_imgproc.2.4.9.dylib */; };
-		CFD4295819ECC05E00C6533D /* libopencv_legacy.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294619ECC05D00C6533D /* libopencv_legacy.2.4.9.dylib */; };
-		CFD4295919ECC05E00C6533D /* libopencv_ml.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294719ECC05D00C6533D /* libopencv_ml.2.4.9.dylib */; };
-		CFD4295A19ECC05E00C6533D /* libopencv_nonfree.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294819ECC05D00C6533D /* libopencv_nonfree.2.4.9.dylib */; };
-		CFD4295B19ECC05E00C6533D /* libopencv_objdetect.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294919ECC05D00C6533D /* libopencv_objdetect.2.4.9.dylib */; };
-		CFD4295C19ECC05E00C6533D /* libopencv_ocl.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294A19ECC05D00C6533D /* libopencv_ocl.2.4.9.dylib */; };
-		CFD4295D19ECC05E00C6533D /* libopencv_photo.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294B19ECC05D00C6533D /* libopencv_photo.2.4.9.dylib */; };
-		CFD4295E19ECC05E00C6533D /* libopencv_stitching.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294C19ECC05D00C6533D /* libopencv_stitching.2.4.9.dylib */; };
-		CFD4295F19ECC05E00C6533D /* libopencv_superres.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294D19ECC05D00C6533D /* libopencv_superres.2.4.9.dylib */; };
-		CFD4296019ECC05E00C6533D /* libopencv_video.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294E19ECC05D00C6533D /* libopencv_video.2.4.9.dylib */; };
-		CFD4296119ECC05E00C6533D /* libopencv_videostab.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4294F19ECC05D00C6533D /* libopencv_videostab.2.4.9.dylib */; };
 		CFD4296419ECC08200C6533D /* NSImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFD4296319ECC08200C6533D /* NSImage+OpenCV.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CFD4299819ECCF4600C6533D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4299719ECCF4600C6533D /* CoreMedia.framework */; };
 		CFD5C95819D263FE006631EA /* Broadcast.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFD5C95719D263FE006631EA /* Broadcast.mm */; };
@@ -62,10 +63,8 @@
 		CF2E866719C7DF5B00DA545F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CF2E866819C7DF5B00DA545F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CF2E866919C7DF5B00DA545F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CF2E866C19C7DF5B00DA545F /* Realtime Abnormal Event Detection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Realtime Abnormal Event Detection-Info.plist"; sourceTree = "<group>"; };
 		CF2E866E19C7DF5B00DA545F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF2E867019C7DF5B00DA545F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF2E867219C7DF5B00DA545F /* Realtime Abnormal Event Detection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Realtime Abnormal Event Detection-Prefix.pch"; sourceTree = "<group>"; };
 		CF2E867419C7DF5B00DA545F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CF2E867619C7DF5B00DA545F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF2E867A19C7DF5B00DA545F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -74,32 +73,36 @@
 		CF2E868A19C7DF5B00DA545F /* Realtime Abnormal Event DetectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Realtime Abnormal Event DetectionTests-Info.plist"; sourceTree = "<group>"; };
 		CF2E868C19C7DF5B00DA545F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF2E868E19C7DF5B00DA545F /* abnormal_event_detectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = abnormal_event_detectionTests.m; sourceTree = "<group>"; };
+		CF30013919F94B100085E579 /* publicMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = publicMethod.h; sourceTree = "<group>"; };
+		CF30013C19F94B930085E579 /* publicMethod.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = publicMethod.mm; sourceTree = "<group>"; };
 		CF3567D619C8307300C84648 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		CF5CEED219D2BFBC002F972A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		CF8A6C911A1DDC18000F02E9 /* abnormal event detection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "abnormal event detection-Prefix.pch"; sourceTree = "<group>"; };
+		CF8A6C921A1DDC1F000F02E9 /* abnormal event detection-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "abnormal event detection-Info.plist"; sourceTree = "<group>"; };
+		CF9D965819FA2A1E002BAE49 /* libopencv_calib3d.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_calib3d.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D965919FA2A1E002BAE49 /* libopencv_contrib.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_contrib.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_contrib.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D965A19FA2A1E002BAE49 /* libopencv_core.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_core.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D965B19FA2A1E002BAE49 /* libopencv_features2d.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_features2d.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D965C19FA2A1E002BAE49 /* libopencv_flann.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_flann.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D965D19FA2A1E002BAE49 /* libopencv_gpu.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_gpu.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_gpu.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D965E19FA2A1E002BAE49 /* libopencv_highgui.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_highgui.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D965F19FA2A1E002BAE49 /* libopencv_imgproc.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_imgproc.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966019FA2A1E002BAE49 /* libopencv_legacy.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_legacy.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_legacy.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966119FA2A1E002BAE49 /* libopencv_ml.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_ml.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966219FA2A1E002BAE49 /* libopencv_nonfree.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_nonfree.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_nonfree.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966319FA2A1E002BAE49 /* libopencv_objdetect.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_objdetect.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966419FA2A1E002BAE49 /* libopencv_ocl.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ocl.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_ocl.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966519FA2A1E002BAE49 /* libopencv_photo.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_photo.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966619FA2A1E002BAE49 /* libopencv_stitching.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_stitching.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966719FA2A1E002BAE49 /* libopencv_superres.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_superres.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_superres.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966819FA2A1E002BAE49 /* libopencv_video.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_video.2.4.9.dylib; sourceTree = "<group>"; };
+		CF9D966919FA2A1E002BAE49 /* libopencv_videostab.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.2.4.9.dylib; path = ../../../../../usr/local/lib/libopencv_videostab.2.4.9.dylib; sourceTree = "<group>"; };
 		CF9F680219C8819D00D24FEB /* abnormal event detection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "abnormal event detection.entitlements"; sourceTree = "<group>"; };
 		CFA2F6DD19C8048C00999189 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		CFA2F6EA19C8062500999189 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		CFB198CD19C959C400255618 /* Detector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detector.h; sourceTree = "<group>"; };
 		CFB198CE19C959D600255618 /* Detector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Detector.mm; sourceTree = "<group>"; };
 		CFD4293B19ECBF0C00C6533D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		CFD4293E19ECC05D00C6533D /* libopencv_calib3d.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_calib3d.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4293F19ECC05D00C6533D /* libopencv_contrib.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_contrib.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294019ECC05D00C6533D /* libopencv_core.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_core.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294119ECC05D00C6533D /* libopencv_features2d.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_features2d.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294219ECC05D00C6533D /* libopencv_flann.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_flann.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294319ECC05D00C6533D /* libopencv_gpu.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_gpu.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294419ECC05D00C6533D /* libopencv_highgui.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_highgui.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294519ECC05D00C6533D /* libopencv_imgproc.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgproc.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294619ECC05D00C6533D /* libopencv_legacy.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_legacy.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294719ECC05D00C6533D /* libopencv_ml.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_ml.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294819ECC05D00C6533D /* libopencv_nonfree.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_nonfree.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294919ECC05D00C6533D /* libopencv_objdetect.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_objdetect.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294A19ECC05D00C6533D /* libopencv_ocl.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_ocl.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294B19ECC05D00C6533D /* libopencv_photo.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_photo.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294C19ECC05D00C6533D /* libopencv_stitching.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_stitching.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294D19ECC05D00C6533D /* libopencv_superres.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_superres.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294E19ECC05D00C6533D /* libopencv_video.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_video.2.4.9.dylib; sourceTree = "<group>"; };
-		CFD4294F19ECC05D00C6533D /* libopencv_videostab.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.2.4.9.dylib; sourceTree = "<group>"; };
 		CFD4296219ECC08200C6533D /* NSImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+OpenCV.h"; sourceTree = "<group>"; };
 		CFD4296319ECC08200C6533D /* NSImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+OpenCV.mm"; sourceTree = "<group>"; };
 		CFD4299719ECCF4600C6533D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -112,29 +115,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD4299819ECCF4600C6533D /* CoreMedia.framework in Frameworks */,
-				CFD4295E19ECC05E00C6533D /* libopencv_stitching.2.4.9.dylib in Frameworks */,
-				CFD4295219ECC05E00C6533D /* libopencv_core.2.4.9.dylib in Frameworks */,
-				CFD4295419ECC05E00C6533D /* libopencv_flann.2.4.9.dylib in Frameworks */,
-				CFD4295D19ECC05E00C6533D /* libopencv_photo.2.4.9.dylib in Frameworks */,
-				CFD4295319ECC05E00C6533D /* libopencv_features2d.2.4.9.dylib in Frameworks */,
-				CFD4296119ECC05E00C6533D /* libopencv_videostab.2.4.9.dylib in Frameworks */,
-				CFA2F6F619C8062500999189 /* CoreVideo.framework in Frameworks */,
-				CFD4296019ECC05E00C6533D /* libopencv_video.2.4.9.dylib in Frameworks */,
-				CFD4295C19ECC05E00C6533D /* libopencv_ocl.2.4.9.dylib in Frameworks */,
+				CF9D967A19FA2A1E002BAE49 /* libopencv_video.2.4.9.dylib in Frameworks */,
 				CFD4293C19ECBF0C00C6533D /* AVFoundation.framework in Frameworks */,
-				CFD4295A19ECC05E00C6533D /* libopencv_nonfree.2.4.9.dylib in Frameworks */,
-				CFD4295019ECC05D00C6533D /* libopencv_calib3d.2.4.9.dylib in Frameworks */,
-				CFD4295919ECC05E00C6533D /* libopencv_ml.2.4.9.dylib in Frameworks */,
-				CFD4295119ECC05E00C6533D /* libopencv_contrib.2.4.9.dylib in Frameworks */,
-				CFD4295F19ECC05E00C6533D /* libopencv_superres.2.4.9.dylib in Frameworks */,
-				CFD4295B19ECC05E00C6533D /* libopencv_objdetect.2.4.9.dylib in Frameworks */,
-				CFD4295519ECC05E00C6533D /* libopencv_gpu.2.4.9.dylib in Frameworks */,
-				CFD4295819ECC05E00C6533D /* libopencv_legacy.2.4.9.dylib in Frameworks */,
-				CFA2F6DF19C8062500999189 /* CoreData.framework in Frameworks */,
+				CF9D966F19FA2A1E002BAE49 /* libopencv_gpu.2.4.9.dylib in Frameworks */,
+				CF9D967319FA2A1E002BAE49 /* libopencv_ml.2.4.9.dylib in Frameworks */,
+				CF9D966A19FA2A1E002BAE49 /* libopencv_calib3d.2.4.9.dylib in Frameworks */,
+				CF9D967819FA2A1E002BAE49 /* libopencv_stitching.2.4.9.dylib in Frameworks */,
 				CF2E866519C7DF5B00DA545F /* Cocoa.framework in Frameworks */,
-				CFD4295719ECC05E00C6533D /* libopencv_imgproc.2.4.9.dylib in Frameworks */,
-				CFD4295619ECC05E00C6533D /* libopencv_highgui.2.4.9.dylib in Frameworks */,
+				CFA2F6DF19C8062500999189 /* CoreData.framework in Frameworks */,
+				CF9D967B19FA2A1E002BAE49 /* libopencv_videostab.2.4.9.dylib in Frameworks */,
+				CF9D967419FA2A1E002BAE49 /* libopencv_nonfree.2.4.9.dylib in Frameworks */,
+				CF9D966E19FA2A1E002BAE49 /* libopencv_flann.2.4.9.dylib in Frameworks */,
+				CF9D967719FA2A1E002BAE49 /* libopencv_photo.2.4.9.dylib in Frameworks */,
+				CFD4299819ECCF4600C6533D /* CoreMedia.framework in Frameworks */,
+				CF9D967219FA2A1E002BAE49 /* libopencv_legacy.2.4.9.dylib in Frameworks */,
+				CFA2F6F619C8062500999189 /* CoreVideo.framework in Frameworks */,
+				CF9D967619FA2A1E002BAE49 /* libopencv_ocl.2.4.9.dylib in Frameworks */,
+				CF9D967119FA2A1E002BAE49 /* libopencv_imgproc.2.4.9.dylib in Frameworks */,
+				CF9D967919FA2A1E002BAE49 /* libopencv_superres.2.4.9.dylib in Frameworks */,
+				CF9D967519FA2A1E002BAE49 /* libopencv_objdetect.2.4.9.dylib in Frameworks */,
+				CF9D966B19FA2A1E002BAE49 /* libopencv_contrib.2.4.9.dylib in Frameworks */,
+				CF9D966C19FA2A1E002BAE49 /* libopencv_core.2.4.9.dylib in Frameworks */,
+				CF9D967019FA2A1E002BAE49 /* libopencv_highgui.2.4.9.dylib in Frameworks */,
+				CF9D966D19FA2A1E002BAE49 /* libopencv_features2d.2.4.9.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,14 +175,9 @@
 		CF2E866319C7DF5B00DA545F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFD4293D19ECC05D00C6533D /* CVLib */,
-				CFD4293B19ECBF0C00C6533D /* AVFoundation.framework */,
-				CFD4299719ECCF4600C6533D /* CoreMedia.framework */,
-				CF2E866719C7DF5B00DA545F /* AppKit.framework */,
-				CF2E866819C7DF5B00DA545F /* CoreData.framework */,
-				CF2E866919C7DF5B00DA545F /* Foundation.framework */,
-				CFA2F6EA19C8062500999189 /* CoreVideo.framework */,
-				CF2E866419C7DF5B00DA545F /* Cocoa.framework */,
+				CF8A63821A1DD290000F02E9 /* Matlab */,
+				CF9D967C19FA2E01002BAE49 /* Cocoa */,
+				CF9D965719FA29F7002BAE49 /* OpenCV */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,6 +185,8 @@
 		CF2E866A19C7DF5B00DA545F /* abnormal event detection */ = {
 			isa = PBXGroup;
 			children = (
+				CF30013919F94B100085E579 /* publicMethod.h */,
+				CF30013C19F94B930085E579 /* publicMethod.mm */,
 				CFD4296219ECC08200C6533D /* NSImage+OpenCV.h */,
 				CFD4296319ECC08200C6533D /* NSImage+OpenCV.mm */,
 				CFD5C95619D263BA006631EA /* Broadcast.h */,
@@ -206,10 +206,10 @@
 			isa = PBXGroup;
 			children = (
 				CF9F680219C8819D00D24FEB /* abnormal event detection.entitlements */,
-				CF2E866C19C7DF5B00DA545F /* Realtime Abnormal Event Detection-Info.plist */,
+				CF8A6C921A1DDC1F000F02E9 /* abnormal event detection-Info.plist */,
 				CF2E866D19C7DF5B00DA545F /* InfoPlist.strings */,
 				CF2E867019C7DF5B00DA545F /* main.m */,
-				CF2E867219C7DF5B00DA545F /* Realtime Abnormal Event Detection-Prefix.pch */,
+				CF8A6C911A1DDC18000F02E9 /* abnormal event detection-Prefix.pch */,
 				CF5CEED219D2BFBC002F972A /* README.md */,
 				CF2E867319C7DF5B00DA545F /* Credits.rtf */,
 			);
@@ -242,30 +242,50 @@
 			name = images;
 			sourceTree = "<group>";
 		};
-		CFD4293D19ECC05D00C6533D /* CVLib */ = {
+		CF8A63821A1DD290000F02E9 /* Matlab */ = {
 			isa = PBXGroup;
 			children = (
-				CFD4293E19ECC05D00C6533D /* libopencv_calib3d.2.4.9.dylib */,
-				CFD4293F19ECC05D00C6533D /* libopencv_contrib.2.4.9.dylib */,
-				CFD4294019ECC05D00C6533D /* libopencv_core.2.4.9.dylib */,
-				CFD4294119ECC05D00C6533D /* libopencv_features2d.2.4.9.dylib */,
-				CFD4294219ECC05D00C6533D /* libopencv_flann.2.4.9.dylib */,
-				CFD4294319ECC05D00C6533D /* libopencv_gpu.2.4.9.dylib */,
-				CFD4294419ECC05D00C6533D /* libopencv_highgui.2.4.9.dylib */,
-				CFD4294519ECC05D00C6533D /* libopencv_imgproc.2.4.9.dylib */,
-				CFD4294619ECC05D00C6533D /* libopencv_legacy.2.4.9.dylib */,
-				CFD4294719ECC05D00C6533D /* libopencv_ml.2.4.9.dylib */,
-				CFD4294819ECC05D00C6533D /* libopencv_nonfree.2.4.9.dylib */,
-				CFD4294919ECC05D00C6533D /* libopencv_objdetect.2.4.9.dylib */,
-				CFD4294A19ECC05D00C6533D /* libopencv_ocl.2.4.9.dylib */,
-				CFD4294B19ECC05D00C6533D /* libopencv_photo.2.4.9.dylib */,
-				CFD4294C19ECC05D00C6533D /* libopencv_stitching.2.4.9.dylib */,
-				CFD4294D19ECC05D00C6533D /* libopencv_superres.2.4.9.dylib */,
-				CFD4294E19ECC05D00C6533D /* libopencv_video.2.4.9.dylib */,
-				CFD4294F19ECC05D00C6533D /* libopencv_videostab.2.4.9.dylib */,
 			);
-			name = CVLib;
-			path = "abnormal event detection/CVLib";
+			name = Matlab;
+			sourceTree = "<group>";
+		};
+		CF9D965719FA29F7002BAE49 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				CF9D965819FA2A1E002BAE49 /* libopencv_calib3d.2.4.9.dylib */,
+				CF9D965919FA2A1E002BAE49 /* libopencv_contrib.2.4.9.dylib */,
+				CF9D965A19FA2A1E002BAE49 /* libopencv_core.2.4.9.dylib */,
+				CF9D965B19FA2A1E002BAE49 /* libopencv_features2d.2.4.9.dylib */,
+				CF9D965C19FA2A1E002BAE49 /* libopencv_flann.2.4.9.dylib */,
+				CF9D965D19FA2A1E002BAE49 /* libopencv_gpu.2.4.9.dylib */,
+				CF9D965E19FA2A1E002BAE49 /* libopencv_highgui.2.4.9.dylib */,
+				CF9D965F19FA2A1E002BAE49 /* libopencv_imgproc.2.4.9.dylib */,
+				CF9D966019FA2A1E002BAE49 /* libopencv_legacy.2.4.9.dylib */,
+				CF9D966119FA2A1E002BAE49 /* libopencv_ml.2.4.9.dylib */,
+				CF9D966219FA2A1E002BAE49 /* libopencv_nonfree.2.4.9.dylib */,
+				CF9D966319FA2A1E002BAE49 /* libopencv_objdetect.2.4.9.dylib */,
+				CF9D966419FA2A1E002BAE49 /* libopencv_ocl.2.4.9.dylib */,
+				CF9D966519FA2A1E002BAE49 /* libopencv_photo.2.4.9.dylib */,
+				CF9D966619FA2A1E002BAE49 /* libopencv_stitching.2.4.9.dylib */,
+				CF9D966719FA2A1E002BAE49 /* libopencv_superres.2.4.9.dylib */,
+				CF9D966819FA2A1E002BAE49 /* libopencv_video.2.4.9.dylib */,
+				CF9D966919FA2A1E002BAE49 /* libopencv_videostab.2.4.9.dylib */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		CF9D967C19FA2E01002BAE49 /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				CFD4293B19ECBF0C00C6533D /* AVFoundation.framework */,
+				CF2E866719C7DF5B00DA545F /* AppKit.framework */,
+				CF2E866419C7DF5B00DA545F /* Cocoa.framework */,
+				CF2E866819C7DF5B00DA545F /* CoreData.framework */,
+				CFA2F6EA19C8062500999189 /* CoreVideo.framework */,
+				CFD4299719ECCF4600C6533D /* CoreMedia.framework */,
+				CF2E866919C7DF5B00DA545F /* Foundation.framework */,
+			);
+			name = Cocoa;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +380,7 @@
 				CF2E867D19C7DF5B00DA545F /* Images.xcassets in Resources */,
 				CF2E867519C7DF5B00DA545F /* Credits.rtf in Resources */,
 				CF2E867B19C7DF5B00DA545F /* MainMenu.xib in Resources */,
+				CF8A6C931A1DDC1F000F02E9 /* abnormal event detection-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,8 +399,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF5CEED319D2BFBC002F972A /* README.md in Sources */,
 				CFD4296419ECC08200C6533D /* NSImage+OpenCV.mm in Sources */,
+				CF30013D19F94B930085E579 /* publicMethod.mm in Sources */,
 				CFA2F6DE19C8048C00999189 /* AppDelegate.mm in Sources */,
 				CF2E867119C7DF5B00DA545F /* main.m in Sources */,
 				CFD5C95819D263FE006631EA /* Broadcast.mm in Sources */,
@@ -522,22 +543,25 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "abnormal event detection/Realtime Abnormal Event Detection-Prefix.pch";
+				GCC_PREFIX_HEADER = "abnormal event detection/abnormal event detection-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/local/include,
+					"$(SYSTEM_APPS_DIR)/MATLAB_R2014b.app/extern/include",
 				);
-				INFOPLIST_FILE = "abnormal event detection/Realtime Abnormal Event Detection-Info.plist";
+				INFOPLIST_FILE = "abnormal event detection/abnormal event detection-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					/usr/local/lib,
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/lib",
-					"$(PROJECT_DIR)/abnormal",
-					event,
-					detection/CVLib,
+					"$(SYSTEM_APPS_DIR)/MATLAB_R2014b.app/sys/os/maci64",
+					"$(SYSTEM_APPS_DIR)/MATLAB_R2014b.app/bin/maci64",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "Realtime Abnormal Event Detection";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -555,22 +579,25 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "abnormal event detection/Realtime Abnormal Event Detection-Prefix.pch";
+				GCC_PREFIX_HEADER = "abnormal event detection/abnormal event detection-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/local/include,
+					"$(SYSTEM_APPS_DIR)/MATLAB_R2014b.app/extern/include",
 				);
-				INFOPLIST_FILE = "abnormal event detection/Realtime Abnormal Event Detection-Info.plist";
+				INFOPLIST_FILE = "abnormal event detection/abnormal event detection-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					/usr/local/lib,
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/lib",
-					"$(PROJECT_DIR)/abnormal",
-					event,
-					detection/CVLib,
+					"$(SYSTEM_APPS_DIR)/MATLAB_R2014b.app/sys/os/maci64",
+					"$(SYSTEM_APPS_DIR)/MATLAB_R2014b.app/bin/maci64",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "Realtime Abnormal Event Detection";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

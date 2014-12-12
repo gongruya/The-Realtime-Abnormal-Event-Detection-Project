@@ -10,21 +10,23 @@
 #include<fstream>
 #import "NSImage+OpenCV.h"
 #import "Detector.h"
-//#import "RTSPServer.h"
+
 
 using namespace cv;
 using namespace std;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (weak) IBOutlet NSImageView *videoPlay;
-@property (weak) IBOutlet NSImageView *videoGray;
-@property (weak) IBOutlet NSImageView *videoDiff;
-@property (weak) IBOutlet NSImageView *videoResult;
+@property (weak) IBOutlet NSTextField *frameLabel;
 @property (weak) IBOutlet NSTextField *FPS;
+@property (weak) IBOutlet NSImageView *videoDisplay1;
+@property (weak) IBOutlet NSImageView *videoDisplay2;
+@property (weak) IBOutlet NSImageView *videoDisplay3;
+@property (weak) IBOutlet NSImageView *videoDisplay4;
 
 @property (assign) IBOutlet NSWindow *window;
 - (IBAction)actSelectVideo:(id)sender;
 - (IBAction)actSparseLearning:(id)sender;
+@property (unsafe_unretained) IBOutlet NSTextView *myLog;
 
 @end

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 GDCL http://www.gdcl.co.uk/license.htm
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 #import <CoreFoundation/CoreFoundation.h> 
 #include <sys/socket.h> 
 #include <netinet/in.h>

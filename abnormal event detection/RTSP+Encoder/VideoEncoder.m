@@ -18,8 +18,7 @@
     [enc initPath:path Height:height andWidth:width];
     return enc;
 }
-
-
+/*
 - (void) initPath:(NSString*)path Height:(int) height andWidth:(int) width
 {
     self.path = path;
@@ -40,7 +39,7 @@
     _writerInput.expectsMediaDataInRealTime = YES;
     [_writer addInput:_writerInput];
 }
-
+*/
 - (void) finishWithCompletionHandler:(void (^)(void))handler
 {
     [_writer finishWritingWithCompletionHandler: handler];

@@ -12,13 +12,14 @@
     double thr, lambda;
     UInt32 Dim;
 }
+- (id) init;
 @end
 
 @interface testingParams: NSObject {            //Testing parameters
 @public
     double thr;
 }
-- (void) setParams: (double) threshold;         //To be continued
+- (void) setThreshold: (double) threshold;         //To be continued
 @end
 
 @interface feaParams: NSObject {                //Feature extraction parameters
@@ -27,6 +28,7 @@
     UInt8 winH, winW, winHNum, winWNum;         //Window height, window width, number H, number W
     double motionThr;                           //Motion threshold
 }
+- (id) init;
 @end
 
 @interface frameDiffQueue: NSObject {           //Nearest n frames
@@ -34,7 +36,9 @@
     UInt8 size;                                 //Max size of the queue
     cv::Mat current;                            //Current frame and the
     std::vector<cv::Mat> Queue;
+    UInt64 count;
 }
+- (id) init;
 - (void) add: (cv::Mat) obj;
 - (void) addDiff: (cv::Mat) frame;
 - (cv::Mat) last;
@@ -49,7 +53,7 @@
     cv::Mat features;                           //Each row is a feature
     std::vector<UInt8> locX, locY;
 }
-- (void) extractFeatures4Testing: (frameDiffQueue *) frames : (feaParams *) featuringParameters;
+- (void) extractFeatures4Testing: (frameDiffQueue *) frames : (feaParams *) featuringParameters : (cv::Mat) COEFF;
 - (void) extractFeatures4Training: (frameDiffQueue *) frames : (feaParams *) featuringParameters;
 - (size_t) featureNum;
 @end
@@ -62,7 +66,6 @@
 }
 - (void) sparseLearning: (cuboid *) features : (learningParams*) learningParameters;   //Train with cuboids and parameters.
 - (size_t) detectorNum;
-- (cv::Mat) gradient: (std::vector<cv::Mat>) beta : (cv::Mat) S: (cv::Mat) fea;
 - (void) saveToFile: (NSString *) fileName;
 - (void) initFromFile: (NSString *) fileName;
 @end
