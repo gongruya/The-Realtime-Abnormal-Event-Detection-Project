@@ -10,27 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "436331056.816293"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "-extractFeatures4Testing:::"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "abnormal event detection/Detector.mm"
-            timestampString = "436948281.260401"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "-sparseLearning::"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438148740.73499"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
+            startingLineNumber = "359"
+            endingLineNumber = "359"
             landmarkName = "-detect:::"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438148740.73499"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "-sparseLearning::"
             landmarkType = "5">
             <Locations>
@@ -104,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438148740.73499"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "-sparseLearning::"
             landmarkType = "5">
          </BreakpointContent>
@@ -120,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "446923115.292031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "-training:"
             landmarkType = "5">
          </BreakpointContent>
@@ -136,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "446923115.292031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "-training:"
             landmarkType = "5">
          </BreakpointContent>
@@ -152,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "448712212.990069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "-myDemo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -168,73 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "446923115.292031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "-myDemo:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "abnormal event detection/Detector.mm"
-            timestampString = "436331056.816293"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "-extractFeatures4Testing:::"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[cuboid extractFeatures4Testing:::]"
-                  moduleName = "Realtime Abnormal Event Detection"
-                  urlString = "file:///Users/gongruya/Documents/Computer%20Vision/abnormal%20event%20detection/abnormal%20event%20detection/Detector.mm"
-                  timestampString = "435135269.047311"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "3230">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[cuboid extractFeatures4Testing:::]"
-                  moduleName = "Realtime Abnormal Event Detection"
-                  urlString = "file:///Users/gongruya/Documents/Computer%20Vision/abnormal%20event%20detection/abnormal%20event%20detection/Detector.mm"
-                  timestampString = "435135269.047701"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "3274">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "-training:"
             landmarkType = "5">
          </BreakpointContent>
@@ -246,11 +168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438148740.73499"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "-sparseLearning::"
             landmarkType = "5">
          </BreakpointContent>
@@ -262,58 +184,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "436331056.816293"
+            timestampString = "446966506.361969"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-extractFeatures4Training::"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[cuboid extractFeatures4Training::]"
-                  moduleName = "Realtime Abnormal Event Detection"
-                  urlString = "file:///Users/gongruya/Documents/Computer%20Vision/abnormal%20event%20detection/abnormal%20event%20detection/Detector.mm"
-                  timestampString = "435988865.901717"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "2374">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[cuboid extractFeatures4Training::]"
-                  moduleName = "Realtime Abnormal Event Detection"
-                  urlString = "file:///Users/gongruya/Documents/Computer%20Vision/abnormal%20event%20detection/abnormal%20event%20detection/Detector.mm"
-                  timestampString = "435988865.902068"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "2422">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "abnormal event detection/Detector.mm"
-            timestampString = "436331056.816293"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "-extractFeatures4Training::"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "-extractFeatures4Training::::"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -324,11 +200,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438238635.952693"
+            timestampString = "446923115.292031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "-training:"
             landmarkType = "5">
          </BreakpointContent>
@@ -340,11 +216,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438148740.73499"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
             landmarkName = "-gradientOfBeta:andS:andFeature:andAlpha:"
             landmarkType = "5">
          </BreakpointContent>
@@ -356,11 +232,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "437022095.159693"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
             landmarkName = "-sparseLearning::"
             landmarkType = "5">
          </BreakpointContent>
@@ -372,11 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "437022095.159693"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "-sparseLearning::"
             landmarkType = "5">
             <Locations>
@@ -418,11 +294,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "446923115.292031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "-training:"
             landmarkType = "5">
          </BreakpointContent>
@@ -434,11 +310,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "446923115.292031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "-training:"
             landmarkType = "5">
          </BreakpointContent>
@@ -450,11 +326,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "446923115.292031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "-training:"
             landmarkType = "5">
          </BreakpointContent>
@@ -466,11 +342,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "448712212.990069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "-myDemo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -482,43 +358,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438242563.478267"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "-extractFeatures4Testing:::"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438242705.907237"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "-extractFeatures4Testing:::"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438242912.476466"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "305"
-            endingLineNumber = "305"
+            startingLineNumber = "355"
+            endingLineNumber = "355"
             landmarkName = "-detect:::"
             landmarkType = "5">
          </BreakpointContent>
@@ -530,11 +374,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/Detector.mm"
-            timestampString = "438243001.401433"
+            timestampString = "446976835.434719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "308"
-            endingLineNumber = "308"
+            startingLineNumber = "358"
+            endingLineNumber = "358"
             landmarkName = "-detect:::"
             landmarkType = "5">
          </BreakpointContent>
@@ -542,16 +386,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "abnormal event detection/AppDelegate.mm"
-            timestampString = "438245848.270179"
+            timestampString = "446923115.292031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "-training:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "abnormal event detection/AppDelegate.mm"
+            timestampString = "446923115.292031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "-training:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "abnormal event detection/AppDelegate.mm"
+            timestampString = "448712212.990069"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "-myDemo:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "abnormal event detection/AppDelegate.mm"
+            timestampString = "448712212.990069"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "-myDemo:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

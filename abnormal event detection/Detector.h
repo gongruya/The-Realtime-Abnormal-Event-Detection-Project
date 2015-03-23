@@ -53,8 +53,8 @@
     cv::Mat features;                           //Each row is a feature
     std::vector<UInt8> locX, locY;
 }
-- (void) extractFeatures4Testing: (frameDiffQueue *) frames : (feaParams *) featuringParameters : (cv::Mat) COEFF;
-- (void) extractFeatures4Training: (frameDiffQueue *) frames : (feaParams *) featuringParameters;
+- (void) extractFeatures4Testing: (frameDiffQueue *) frames : (feaParams *) featuringParameters;
+- (void) extractFeatures4Training: (frameDiffQueue *) frames : (feaParams *) featuringParameters: (int) ii: (int) jj;
 - (size_t) featureNum;
 @end
 
@@ -74,7 +74,8 @@
 @public
     std::vector<UInt8> locX, locY;
     std::vector<BOOL> normal;
+    cv::Mat anomalyMap;
 }
-- (void) detect: (detector *) myDetector : (cuboid *) cuboidFeature : (testingParams*) testingParameters;
+- (void) detect: (std::vector <detector *>) myDetector : (cuboid *) cuboidFeature : (testingParams*) testingParameters;
 - (size_t) abnormalNum;
 @end

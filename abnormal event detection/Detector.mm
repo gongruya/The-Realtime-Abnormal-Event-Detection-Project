@@ -27,8 +27,10 @@
 }
 - (void) addDiff: (cv::Mat) frame {
     cv::Mat diff;
-    if (Queue.size() > 0)
+    if (Queue.size() > 0) {
         cv::absdiff(frame, current, diff);
+        //diff = frame - current;
+    }
     current = frame;
     [self add: diff];
     ++count;
@@ -52,7 +54,7 @@
 @end
 
 @implementation cuboid
-- (void) extractFeatures4Testing: (frameDiffQueue *) frames : (feaParams *) featuringParameters : (cv::Mat) COEFF {
+- (void) extractFeatures4Testing: (frameDiffQueue *) frames : (feaParams *) featuringParameters{
     UInt8 depth = featuringParameters -> depth;
     UInt8 winH = featuringParameters -> winH;
     UInt8 winW = featuringParameters -> winW;
@@ -66,7 +68,7 @@
     }
     
     for (int i = 0; i < winWNum; ++i)
-        for (int j = 0; j < winHNum; ++j) {
+        for (int j = 0; j < winHNum-2; ++j) {
             cv::Rect rect(i * winW, j * winH, winW, winH);
             cv::Mat cube;
             cube = img[0](rect).clone().reshape(0, 1);
@@ -74,20 +76,21 @@
                 cv::hconcat(cube, img[k](rect).clone().reshape(0, 1), cube);    //convert to a row vector
             }
 
-            if (cv::sum(cube)[0] >= motionThr) {
+            if (cv::sum(abs(cube))[0] >= motionThr) {
+                normalize(cube, cube);
                 features.push_back(cube.clone());
                 locX.push_back(i);
                 locY.push_back(j);
             }
         }
-    if (!features.empty())
-        features = features * COEFF;
+    //if (!features.empty())
+    //    features = pca.project(features);
 }
-- (void) extractFeatures4Training: (frameDiffQueue *) frames : (feaParams *) featuringParameters {
+- (void) extractFeatures4Training: (frameDiffQueue *) frames: (feaParams *) featuringParameters: (int) ii: (int) jj {
     UInt8 depth = featuringParameters -> depth;
     UInt8 winH = featuringParameters -> winH;
     UInt8 winW = featuringParameters -> winW;
-    UInt8 ssr = featuringParameters -> ssr;
+    //UInt8 ssr = featuringParameters -> ssr;
     UInt8 tsr = featuringParameters -> tsr;
     double motionThr = featuringParameters -> motionThr;
     
@@ -97,7 +100,7 @@
     for (int k = 0; k < depth; ++k) {
         img.push_back(frames -> Queue[k]);
     }
-    
+    /*
     for (int i = 0; i < 160 - winW; i += ssr)
         for (int j =0; j < 120 - winH; j += ssr) {
             cv::Rect rect(i, j, winW, winH);
@@ -108,9 +111,23 @@
                 cv::hconcat(cube, img[k](rect).clone().reshape(0, 1), cube);
 
             //std::cout << cv::sum(cube)[0] << endl;
-            if (cv::sum(cube)[0] >= motionThr)
+            if (cv::sum(abs(cube))[0] >= motionThr)
                 features.push_back(cube.clone());
         }
+     */
+    cv::Rect rect(ii * winW, jj * winH, winW, winH);
+    cv::Mat cube;
+    cube = img[0](rect).clone().reshape(0, 1);
+
+    for (int k = 1; k < depth; ++k) {
+        cv::hconcat(cube, img[k](rect).clone().reshape(0, 1), cube);
+    }
+    
+    //std::cout << cv::sum(cube)[0] << endl;
+    if (cv::sum(abs(cube))[0] >= motionThr) {
+        normalize(cube, cube);
+        features.push_back(cube.clone());
+    }
 }
 - (size_t) featureNum {
     return features.rows;
@@ -122,8 +139,8 @@
     if (self = [super init]) {
         ssr = 5, tsr = 1, depth = 5;
         winH = winW = 10;
-        winHNum = 12, winWNum = 16;
-        motionThr = 5;
+        winHNum = 9, winWNum = 16;
+        motionThr = 10;
     }
     return self;
 }
@@ -153,21 +170,21 @@
     UInt32 N = feaMat.cols;
     sparseDim = learningParameters -> Dim;
     feaDim = N;
-    UInt32 maxIter = 1500;
+    UInt32 maxIter = 100;
     double alpha = 3e-2;
-    //double threshold = learningParameters -> thr;
-    double threshold = 0.3;
+    double threshold = learningParameters -> thr;
     
-    int maxRows = 50;
+    int maxRows = 40;
     //std::cout << "Features remain: " << feaMat.rows << std::endl;
     addLog(@"Features remain: %d\n", feaMat.rows);
-    int rows4CurrentTurn = maxRows;//feaMat.rows;
+    int rows4CurrentTurn = min(maxRows, feaMat.rows);
     while (feaMat.rows) {
         ///S 150 by 20     beta 20 by 1
         //threshold = 0.0493 * log(7.5887 + R.size());
-        if (rows4CurrentTurn < sparseDim)
-            break;                  //Nothing we can do
         
+        /*if (rows4CurrentTurn < sparseDim)
+            break;                  //Nothing we can do
+        */
         cv::Mat feaMatCurrentTurn = feaMat(cv::Range(0, rows4CurrentTurn), cv::Range::all());
         
         cv::Mat S = cv::Mat(N, sparseDim, CV_64FC1);
@@ -207,7 +224,7 @@
                 addLog(@"Iter %d: L(S, beta) = %lf\n", iter, [self val: beta: S: feaMatCurrentTurn]);
             }
         }
-        //cv::normalize(S, S);
+        cv::normalize(S, S);
         cv::Mat curR = (S * (S.t() * S).inv(cv::DECOMP_SVD) * S.t() - cv::Mat::eye(S.rows, S.rows, CV_64FC1)).t();
         
         cv::Mat result = feaMat * curR; //M by 500
@@ -296,10 +313,43 @@
 @end
 
 @implementation detectResult
-- (void) detect:(detector *)myDetector :(cuboid *)cuboidFeature :(testingParams *)testingParameters {
+- (void) detect:(vector <detector *>)detectorGroup :(cuboid *)cuboidFeature :(testingParams *)testingParameters {
     size_t feaNum = [cuboidFeature featureNum];
-    size_t detNum = [myDetector detectorNum];
+    
+    anomalyMap = Mat::zeros(9, 16, CV_64FC1);
+    //Detector for each patch
     double thr = testingParameters -> thr;
+    vector <size_t> detNum(16*9);
+    for (int i = 0; i < 16*9; ++i)
+        detNum[i] = [detectorGroup[i] detectorNum];
+    
+    for (int i = 0; i < feaNum; ++i) {
+        normal.push_back(NO);
+        int ii = cuboidFeature -> locX[i];
+        int jj = cuboidFeature -> locY[i];
+        int k = jj * 16 + ii;
+        
+        for (int j = 0; j < detNum[k]; ++j) {
+            cv::Mat error = cuboidFeature -> features.row(i) * detectorGroup[k] -> R[j];
+            error *= error.t();
+            double err = error.at<double>(0,0);
+            
+            anomalyMap.at<double>(cuboidFeature->locY[i], cuboidFeature->locX[i]) = err;
+            
+            //std::cout << error.at<double>(0,0) << std::endl;
+            if (err < thr) {
+                normal[i] = YES;
+                break;
+            }
+        }
+        if (normal[i] == NO) {
+            locX.push_back(cuboidFeature -> locX[i]);
+            locY.push_back(cuboidFeature -> locY[i]);
+        }
+    }
+    
+    
+    /*size_t detNum = [myDetector detectorNum];
     for (int i = 0; i < feaNum; ++i) {
         normal.push_back(NO);
         for (int j = 0; j < detNum; ++j) {
@@ -315,7 +365,7 @@
             locX.push_back(cuboidFeature -> locX[i]);
             locY.push_back(cuboidFeature -> locY[i]);
         }
-    }
+    }*/
 }
 - (size_t) abnormalNum {
     return locX.size();
