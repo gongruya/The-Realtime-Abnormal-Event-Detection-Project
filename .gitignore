@@ -1,8 +1,2 @@
-myData/myDetector
-myData/PCA
-myData copy/feaMat
-myData copy/feaPCA
-myData copy/myDetector
-myData copy/PCAeigenvalues
-myData copy/PCAeigenvectors
-myData copy/PCAmean
+myData
+myData copy
