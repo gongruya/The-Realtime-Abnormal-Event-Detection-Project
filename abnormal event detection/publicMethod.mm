@@ -12,6 +12,18 @@
 NSTextView *theLogText;
 pthread_mutex_t lock;
 
+int detectorArea[9] = {
+    0,
+    1+2+4+8+16,
+    65535-(1<<15),
+    65535,
+    65535,
+    65535,
+    65534,
+    0,
+    0};  //Bit Map, reverse order
+
+
 void *addLogThread(void *arguments) {
     NSString *str = [NSString stringWithUTF8String: (char *)arguments];
     NSLog(@"%@", str);

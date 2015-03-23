@@ -66,23 +66,23 @@
     for (int k = 0; k < depth; ++k) {
         img.push_back(frames -> Queue[k]);
     }
-    
+    extern int detectorArea[9];
     for (int i = 0; i < winWNum; ++i)
-        for (int j = 0; j < winHNum-2; ++j) {
-            cv::Rect rect(i * winW, j * winH, winW, winH);
-            cv::Mat cube;
-            cube = img[0](rect).clone().reshape(0, 1);
-            for (int k = 1; k < depth; ++k) {
-                cv::hconcat(cube, img[k](rect).clone().reshape(0, 1), cube);    //convert to a row vector
+        for (int j = 0; j < winHNum; ++j)
+            if ((detectorArea[j]>>i)&1) {
+                cv::Rect rect(i * winW, j * winH, winW, winH);
+                cv::Mat cube;
+                cube = img[0](rect).clone().reshape(0, 1);
+                for (int k = 1; k < depth; ++k) {
+                    cv::hconcat(cube, img[k](rect).clone().reshape(0, 1), cube);    //convert to a row vector
+                }
+                if (cv::sum(abs(cube))[0] >= motionThr) {
+                    normalize(cube, cube);
+                    features.push_back(cube.clone());
+                    locX.push_back(i);
+                    locY.push_back(j);
+                }
             }
-
-            if (cv::sum(abs(cube))[0] >= motionThr) {
-                normalize(cube, cube);
-                features.push_back(cube.clone());
-                locX.push_back(i);
-                locY.push_back(j);
-            }
-        }
     //if (!features.empty())
     //    features = pca.project(features);
 }

@@ -29,6 +29,14 @@
     extern NSTextView *theLogText;
     theLogText = myLog;
     
+    extern int detectorArea[9];
+    
+    cv::Mat dArea = cv::Mat::zeros(9, 16, CV_8UC1);
+    for (int i = 0; i < 9; ++i)
+        for (int j = 0; j < 16; ++j)
+            dArea.at<unsigned char>(i, j) = ((detectorArea[i] >> j) & 1) * 255;
+    cv::resize(dArea, dArea, cv::Size(320, 180), 0, 0, INTER_NEAREST);
+    [self showVideo:dArea at: 1];
 }
 
 - (void) training: (NSString *) videoPath {
@@ -242,6 +250,7 @@
             cv::normalize(min(mask*0.7 + gray, 1), grayWithMask, 0, 255, NORM_MINMAX, CV_8UC1);
             
             [self showVideo: grayWithMask at:4];
+            cv::resize(mask255, mask255, videoSize, 0, 0, INTER_NEAREST);
             [self showVideo:mask255 at:3];
             
             mask.release();
